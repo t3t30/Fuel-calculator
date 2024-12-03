@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.dynamicanimation.animation.SpringForce
+import androidx.lifecycle.viewmodel.CreationExtras
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 
@@ -21,7 +22,6 @@ class distanciaActivity : AppCompatActivity() {
 
 
      val preco = intent.getFloatExtra(KEY_PRECO, 0f)
-        val preco1 = preco //acaa parei, convertendo para passar diferente
         val txtdistancia = findViewById<TextInputEditText>(R.id.txtdistancia)
         val btndistancia = findViewById<Button>(R.id.btndistancia)
 
@@ -29,15 +29,16 @@ class distanciaActivity : AppCompatActivity() {
 
         val strdistancia: String= txtdistancia.text.toString()
 
-        if (txtdistancia = ""){
+        if (strdistancia == ""){
                 Snackbar.make(
                     txtdistancia,
                     "Preencha uma distância válida!",
-                    Snackbar.LENGTH_LONG }
+                    Snackbar.LENGTH_LONG) }
             else { val distancia = strdistancia.toFloat()
+
+               val distporpreco = distancia * preco
                val intent = Intent (this, consumoActivity::class.java)
-               intent.putExtra(KEY_DISTANCIA, distancia)
-               intent.putExtra(KEY_PRECO, preco)
+               intent.putExtra(KEY_DISTANCIA, distporpreco)
             startActivity(intent)
             }
 

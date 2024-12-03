@@ -24,11 +24,11 @@ class precoActivity : AppCompatActivity() {
 
         btnproximo1.setOnClickListener {
             val txtprecostr: String = txtpreco.text.toString()
-            if (txtprecostr = ""){
+            if (txtprecostr == ""){
                 Snackbar.make(
                 txtpreco,
                 "Preencha com o preço!",
-                Snackbar.LENGTH_LONG}
+                Snackbar.LENGTH_LONG ) }
             else { val preco = txtprecostr.toFloat()
 
                 //nao esquecer de colocar extras
@@ -53,4 +53,3 @@ class precoActivity : AppCompatActivity() {
 
 
     }
-}
