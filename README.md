@@ -1,3 +1,5 @@
+## NOT READY
+
 Um app para fazer o cálculo de consumo de combustível de um veículo
 
 🤳 Todos os inputs do usuários deverão ser recebidos em uma tela individualmente
