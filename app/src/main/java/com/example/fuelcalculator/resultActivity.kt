@@ -15,10 +15,19 @@ class resultActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_result)
 
-        val result = intent.getFloatExtra(KEY_RESULT, 0f)
+        val preco = intent.getFloatExtra("KEY PRECO", 0f)
+        val distancia = intent.getFloatExtra("KEY DISTANCIA", 0f)
+        val consumo = intent.getFloatExtra("KEY CONSUMO", 0f)
         val txtresult = findViewById<TextView>(R.id.txtresult)
-        val resultformat = String.format("%.2f", txtresult)
-        "R$ ${resultformat}".also { txtresult.text = it }
+
+        val total = distancia/consumo * preco
+
+        val resultformat = String.format("R$ %.2f", total)
+        txtresult.text = resultformat
+
+
+
+
 
 
     }

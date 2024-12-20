@@ -12,7 +12,8 @@ import androidx.lifecycle.viewmodel.CreationExtras
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 
-const val KEY_PRECO = "resultpreco.KEY_PRECO"
+const val KEY_DISTANCIA = "KEY DISTANCIA"
+
 
 class distanciaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +22,7 @@ class distanciaActivity : AppCompatActivity() {
         setContentView(R.layout.activity_distancia)
 
 
-     val preco = intent.getFloatExtra(KEY_PRECO, 0f)
+     val preco = intent.getFloatExtra("KEY PRECO", 0f)
         val txtdistancia = findViewById<TextInputEditText>(R.id.txtdistancia)
         val btndistancia = findViewById<Button>(R.id.btndistancia)
 
@@ -36,9 +37,10 @@ class distanciaActivity : AppCompatActivity() {
                     Snackbar.LENGTH_LONG) }
             else { val distancia = strdistancia.toFloat()
 
-               val distporpreco = distancia * preco
+
                val intent = Intent (this, consumoActivity::class.java)
-               intent.putExtra(KEY_DISTANCIA, distporpreco)
+               intent.putExtra(KEY_DISTANCIA, distancia)
+               intent.putExtra("KEY PRECO", preco)
             startActivity(intent)
             }
 
