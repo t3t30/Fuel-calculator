@@ -25,7 +25,7 @@ class resultActivity : AppCompatActivity() {
         val resultformat = String.format("R$ %.2f", total)
         txtresult.text = resultformat
 
-
+    // esta dando algum erro que no final da errado e fica preto
 
 
 
