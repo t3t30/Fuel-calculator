@@ -7,4 +7,4 @@ Um app para fazer o cálculo de consumo de combustível de um veículo
 📲 Tela de resultados deverá conter resultado de gasto final e resumo das informações que usuário digitou anteriormente.
 
 
-em processo... terminando de recuperar o calculo, 
+em processo... terminando de fazer os calculos porque esta dando 0 no resultado
