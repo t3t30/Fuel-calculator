@@ -15,7 +15,7 @@ class resultActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_result)
 
-        val preco = intent.getFloatExtra("KEY PRECO", 0f)
+        val preco = intent.getFloatExtra("KEY PRICE", 0f)
         val distancia = intent.getFloatExtra("KEY DISTANCIA", 0f)
         val consumo = intent.getFloatExtra("KEY CONSUMO", 0f)
         val txtresult = findViewById<TextView>(R.id.txtresult)
@@ -25,7 +25,7 @@ class resultActivity : AppCompatActivity() {
         val resultformat = String.format("R$ %.2f", total)
         txtresult.text = resultformat
 
-    // esta dando algum erro que no final da errado e fica preto
+
 
 
 

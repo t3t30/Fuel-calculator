@@ -22,7 +22,7 @@ class distanciaActivity : AppCompatActivity() {
         setContentView(R.layout.activity_distancia)
 
 
-     val preco = intent.getFloatExtra("KEY PRECO", 0f)
+     val preco = intent.getFloatExtra("KEY PRICE", 0f)
         val txtdistancia = findViewById<TextInputEditText>(R.id.txtdistancia)
         val btndistancia = findViewById<Button>(R.id.btndistancia)
 
@@ -40,7 +40,7 @@ class distanciaActivity : AppCompatActivity() {
 
                val intent = Intent (this, consumoActivity::class.java)
                intent.putExtra(KEY_DISTANCIA, distancia)
-               intent.putExtra("KEY PRECO", preco)
+               intent.putExtra("KEY PRICE", preco)
             startActivity(intent)
             }
 
