@@ -10,8 +10,6 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.fuelcalculator.databinding.ActivityPrecoBinding
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
-// recuperar dados do botao, textimputedittext
-// passar dados adelante com putextra
 
 const val KEY_PRECO_FUEL = "KEY PRICE"
 
