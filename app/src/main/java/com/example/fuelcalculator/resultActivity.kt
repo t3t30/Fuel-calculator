@@ -28,13 +28,13 @@ class resultActivity : AppCompatActivity() {
         val resultformat = String.format("R$ %.2f", total)
         txtresult.text = resultformat
 
-        val precoformat = String.format("Preço da gasolina: %.2f", preco)
+        val precoformat = String.format("Preço da gasolina: R$ $preco")
         txtpreco.text = precoformat
 
-        val distanciaformat = String.format("Distância: %.2f" , distancia , "km %.2f")
+        val distanciaformat = String.format("Distância percorrida: $distancia km")
         txtdistancia.text = distanciaformat
 
-        val consumoformat = String.format("Consumo do carro: %.2f", consumo, "%.2f km/l")
+        val consumoformat = String.format("Consumo do carro:  $consumo km/l")
         txtconsumo.text = consumoformat
 
 
