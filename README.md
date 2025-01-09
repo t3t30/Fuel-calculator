@@ -14,3 +14,5 @@ Um app para fazer o cálculo de consumo de combustível de um veículo
 <img src= "https://github.com/user-attachments/assets/7ee0764e-8a61-4f5d-8ccf-394bb592c861" width=260>
 <img src= "https://github.com/user-attachments/assets/8ce6ffac-b66c-40af-bff3-18dc86894556" width=260>
 
+## Em processo de internacionalização (suporte de idioma)
+
